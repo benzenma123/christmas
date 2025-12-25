@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Merry Christmas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Snowfall -->
+  <div class="snow">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <h1>Merry Christmas.</h1>
+
+    <p class="soft">Or just… hello.</p>
+
+    <p>
+      If you’re here tonight, maybe the world feels quieter than it should.  
+      Maybe heavier.
+    </p>
+
+    <p class="soft">That’s okay.</p>
+
+    <p>
+      You don’t have to be joyful.  
+      You don’t have to celebrate.  
+      You don’t have to pretend this day feels good.
+    </p>
+
+    <p>
+      Being alone doesn’t mean you’re forgotten.  
+      Feeling low doesn’t mean you’re weak.
+    </p>
+
+    <p>
+      Somewhere, someone made this hoping it would reach you —  
+      not to fix anything,  
+      just to sit with you for a moment.
+    </p>
+
+    <button onclick="showMessage()">I’m still here</button>
+
+    <p id="after-click" class="hidden">
+      Thank you for staying.<br>
+      I’m glad you’re here.
+    </p>
+
+    <p class="footer">
+      Wishing you a little warmth tonight.<br>
+      You are not alone.
+    </p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("after-click").classList.remove("hidden");
+    }
+  </script>
+
+</body>
+</html>
